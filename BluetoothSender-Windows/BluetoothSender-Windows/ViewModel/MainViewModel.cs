@@ -1,4 +1,6 @@
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
 
 namespace BluetoothSender_Windows.ViewModel
 {
@@ -19,16 +21,16 @@ namespace BluetoothSender_Windows.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
+        
+        public ICommand CloseApplication { get; }
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            CloseApplication = new RelayCommand(CloseAppli);
+        }
+
+        private void CloseAppli()
+        {
+            App.Current.Shutdown();
         }
     }
 }

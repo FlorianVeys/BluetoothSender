@@ -24,5 +24,12 @@ namespace BluetoothSender_Windows.View
         {
             InitializeComponent();
         }
+
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            
+            this.DragMove();
+        }
     }
 }

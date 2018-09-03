@@ -117,7 +117,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="Ressource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\Send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\Receiver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\History.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
