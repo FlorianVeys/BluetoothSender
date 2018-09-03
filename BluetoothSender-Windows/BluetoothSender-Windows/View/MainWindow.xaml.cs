@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BluetoothSender_Windows
+namespace BluetoothSender_Windows.View
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
