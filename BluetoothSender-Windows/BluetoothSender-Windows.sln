@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluetoothSender-Windows", "BluetoothSender-Windows\BluetoothSender-Windows.csproj", "{3252F243-7E76-497B-888C-19494BDCAAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3252F243-7E76-497B-888C-19494BDCAAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3252F243-7E76-497B-888C-19494BDCAAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3252F243-7E76-497B-888C-19494BDCAAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3252F243-7E76-497B-888C-19494BDCAAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4831ACE-1BAE-46B5-80B3-809FD0B81181}
+	EndGlobalSection
+EndGlobal
