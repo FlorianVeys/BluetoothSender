@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:BluetoothSender_Windows.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="#FF436060">
             
     </Grid>
 </UserControl>

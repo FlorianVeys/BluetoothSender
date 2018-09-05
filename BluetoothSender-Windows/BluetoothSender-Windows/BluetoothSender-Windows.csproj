@@ -73,6 +73,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\Converters\BooleanToColorConverter.cs" />
     <Compile Include="ViewModel\Converters\VisibilityConverter.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
@@ -154,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressource\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\Refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

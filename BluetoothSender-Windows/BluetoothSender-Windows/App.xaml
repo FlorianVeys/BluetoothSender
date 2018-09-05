@@ -10,7 +10,8 @@
     <ResourceDictionary>
       <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" 
                            xmlns:vm="clr-namespace:BluetoothSender_Windows.ViewModel"/>
-      <converters1:VisibilityConverter x:Key="VisibilityConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
+      <converters:VisibilityConverter x:Key="VisibilityConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
+      <converters1:BooleanToColorConverter x:Key="BooleanToColorConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
     </ResourceDictionary>
   </Application.Resources>
 </Application>

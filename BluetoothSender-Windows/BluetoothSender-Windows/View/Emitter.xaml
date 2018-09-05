@@ -6,7 +6,41 @@
              xmlns:local="clr-namespace:BluetoothSender_Windows.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="#FF436060">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <TextBlock Text="Veuillez entrer une url et appuyer sur envoyer" Margin="0 20 0 20" Background="#FF436060" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+            <TextBox HorizontalAlignment="Center" TextAlignment="Center" Height="30" Width="400" Background="White" VerticalAlignment="Center" FontSize="16">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Height="30" Width="150" Margin="15" Background="#FF436060" BorderThickness="3" BorderBrush="White">
+                <TextBlock Text="Envoyer" FontSize="16" Foreground="White"/>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1" Width="35" BorderThickness="2" BorderBrush="White" Background="#FF436060">
+                    <Image Source="../Ressource/Refresh.png"/>
+                </Button>
+            </Grid>
+            <ListView Grid.Row="1" Margin="25 10 25 25"/>
+        </Grid>
     </Grid>
 </UserControl>

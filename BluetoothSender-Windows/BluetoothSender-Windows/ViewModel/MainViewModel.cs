@@ -39,6 +39,7 @@ namespace BluetoothSender_Windows.ViewModel
                     DisplayReceiverView();
                     break;
             }
+            NotifyChange();
         }
 
         private void DisplayHistoryView()
@@ -72,5 +73,13 @@ namespace BluetoothSender_Windows.ViewModel
         {
             App.Current.MainWindow.WindowState = WindowState.Minimized;
         }
+
+        private void NotifyChange()
+        {
+            RaisePropertyChanged(nameof(VisibilityEmitter));
+            RaisePropertyChanged(nameof(VisibilityReceiver));
+            RaisePropertyChanged(nameof(VisibilityHistory));
+        }
+
     }
 }
