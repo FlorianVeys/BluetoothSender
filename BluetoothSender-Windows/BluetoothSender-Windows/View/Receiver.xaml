@@ -6,7 +6,21 @@
              xmlns:local="clr-namespace:BluetoothSender_Windows.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF436060">
-            
+    <Grid Background="#FF436060" DataContext="{Binding Receiver, Source={StaticResource Locator}}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Vous pouvez activer le service Bluetooth en appuyant sur le boutton ci-dessous" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 40" FontSize="16" Foreground="White"/>
+        <ToggleButton Grid.Row="1" IsChecked="{Binding BluetoothServiceActive, Mode=TwoWay}" Height="200" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="../Ressource/Power.png" Width="120"/>
+            <ToggleButton.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="400"/>
+                </Style>
+            </ToggleButton.Resources>
+        </ToggleButton> 
+        <TextBlock Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Text="{Binding BluetoothServiceActive, Converter={StaticResource BooleanToMessageConverter}}" FontSize="18" Foreground="White" Margin="0 25 0 0"/>
     </Grid>
 </UserControl>

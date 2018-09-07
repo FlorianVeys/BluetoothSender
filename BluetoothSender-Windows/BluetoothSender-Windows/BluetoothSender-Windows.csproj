@@ -74,8 +74,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\Converters\BooleanToColorConverter.cs" />
+    <Compile Include="ViewModel\Converters\BooleanToMessageConverter.cs" />
     <Compile Include="ViewModel\Converters\VisibilityConverter.cs" />
+    <Compile Include="ViewModel\EmitterViewModel.cs" />
+    <Compile Include="ViewModel\HistoryViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ReceiverViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\Receiver.xaml.cs">
       <DependentUpon>Receiver.xaml</DependentUpon>
@@ -158,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressource\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressource\power.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

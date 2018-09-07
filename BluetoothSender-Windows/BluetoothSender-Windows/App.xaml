@@ -12,6 +12,7 @@
                            xmlns:vm="clr-namespace:BluetoothSender_Windows.ViewModel"/>
       <converters:VisibilityConverter x:Key="VisibilityConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
       <converters1:BooleanToColorConverter x:Key="BooleanToColorConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
+      <converters1:BooleanToMessageConverter x:Key="BooleanToMessageConverter" xmlns:converters="clr-namespace:BluetoothSender_Windows.ViewModel.Converters" />
     </ResourceDictionary>
   </Application.Resources>
 </Application>

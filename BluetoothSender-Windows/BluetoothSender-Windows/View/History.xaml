@@ -6,7 +6,42 @@
              xmlns:local="clr-namespace:BluetoothSender_Windows.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF436060">
-            
+    <Grid Background="#FF436060" DataContext="{Binding History, Source={StaticResource Locator}}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="5 10 5 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Historique des liens envoyé :" FontSize="14" Foreground="White"/>
+            <ListView Grid.Row="1" Margin="5" Width="780">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lien" Width="400"/>
+                        <GridViewColumn Header="Date" Width="190"/>
+                        <GridViewColumn Header="Emetteur" Width="190"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Grid Grid.Row="1" Margin="5 10 5 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Historique des liens reçu :" FontSize="14" Foreground="White"/>
+            <ListView Grid.Row="1" Margin="5" Width="780">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lien" Width="400"/>
+                        <GridViewColumn Header="Date" Width="190"/>
+                        <GridViewColumn Header="Emetteur" Width="190"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
     </Grid>
 </UserControl>

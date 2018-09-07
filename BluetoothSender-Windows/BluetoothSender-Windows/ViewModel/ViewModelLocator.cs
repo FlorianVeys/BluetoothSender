@@ -42,6 +42,9 @@ namespace BluetoothSender_Windows.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<EmitterViewModel>();
+            SimpleIoc.Default.Register<ReceiverViewModel>();
+            SimpleIoc.Default.Register<HistoryViewModel>();
         }
 
         public MainViewModel Main
@@ -49,6 +52,30 @@ namespace BluetoothSender_Windows.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+
+        public EmitterViewModel Emitter
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<EmitterViewModel>();
+            }
+        }
+
+        public ReceiverViewModel Receiver
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ReceiverViewModel>();
+            }
+        }
+
+        public HistoryViewModel History
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<HistoryViewModel>();
             }
         }
         
